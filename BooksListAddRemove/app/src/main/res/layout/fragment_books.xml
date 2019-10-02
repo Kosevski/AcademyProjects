@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBooks"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9" />
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="#8D8D8D"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        >
+    <LinearLayout
+        android:background="#A2A2A2"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:padding="10dp"
+                android:background="@color/cardview_light_background"
+                android:id="@+id/edText1"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:hint="@string/name_off_the_book" />
+
+            <EditText
+                android:padding="10dp"
+                android:background="@color/cardview_light_background"
+                android:id="@+id/edText2"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:hint="@string/name_of_the_author" />
+
+        </LinearLayout>
+        <Button
+            android:background="#FF0000"
+            android:textColor="#FFFFFF"
+            android:id="@+id/add_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="@string/add_book" />
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BookStore</string>
+    <string name="add_book">Add Book</string>
+    <string name="name_off_the_book">Name off the Book</string>
+    <string name="name_of_the_author">Name of the Author</string>
+    <string name="remove_btn">remove_btn</string>
+    <string name="author_of_the_book">Author of the book:</string>
+    <string name="name_of_the_book">Name of the book:</string>
+</resources>
